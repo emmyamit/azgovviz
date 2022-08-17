@@ -36,7 +36,7 @@ if ($codeRunPlatform -eq 'GitHubActions') {
         elseif ($statusCode -eq 200) {
             Write-Host "Test returned statusCode: '$statusCode' - '$($repoUri)' is accessible from the public!"
             Write-Host 'Assuming and insisting that you do not want to publish your tenant insights to the public - throw'
-            throw
+            #throw
         }
         else {
             Write-Host "Test returned statusCode: '$statusCode' - skipping this test"
