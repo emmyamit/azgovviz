@@ -519,7 +519,7 @@ Param
 $Error.clear()
 $ErrorActionPreference = 'Stop'
 #removeNoise
-$ProgressPreference = 'SilentlyContinue'
+#$ProgressPreference = 'SilentlyContinue'
 Set-Item Env:\SuppressAzurePowerShellBreakingChangeWarnings 'true'
 
 #start
